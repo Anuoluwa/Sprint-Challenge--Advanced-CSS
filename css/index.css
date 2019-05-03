@@ -168,6 +168,9 @@ p {
   width: 100%;
   background-color: #F6F6F6;
   padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  margin-bottom: 200px;
 }
 .navigation nav {
   margin: 15px 0 0 0;
@@ -196,6 +199,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 90px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
