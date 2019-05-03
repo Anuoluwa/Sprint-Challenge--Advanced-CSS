@@ -13,8 +13,8 @@
     margin: @margin;
 }
 
-.button(@width){
-    background-color: darken(@btn-bg-color, 5%);
+.button(@width, @darkenPercent){
+    background-color: darken(@btn-bg-color, @darkenPercent);
     width: @width;
     font-size: 1rem;
     padding: 8px 13px 8px 17px;
