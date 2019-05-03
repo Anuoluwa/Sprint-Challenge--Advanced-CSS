@@ -314,7 +314,7 @@ footer {
     text-align: center;
     padding: 26px 0 5px 0;
   }
-  .home .walk .walk-text:hover {
+  .home .walk .walk-text .btn:hover {
     background-color: #dddddd;
     color: #22283A;
     cursor: pointer;
