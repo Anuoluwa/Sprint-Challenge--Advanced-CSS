@@ -239,3 +239,6 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.intro div img {
+  border-radius: 7px;
+}
