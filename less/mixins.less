@@ -1,1 +1,29 @@
 // Mixins Here
+.navStyle() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: @nav-bg;
+    padding: 1.5rem 0;
+}
+
+.aTagAndNavMargin(@margin){
+    margin: @margin;
+}
+
+.button(@width, @darkenPercent){
+    background-color: darken(@btn-bg-color, @darkenPercent);
+    width: @width;
+    font-size: 1rem;
+    padding: 8px 13px 8px 17px;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    &:hover{
+        background-color: darken(@wild-sand, 10%) ;
+        color: @btn-bg-color;
+        cursor: pointer;
+    }
+  }

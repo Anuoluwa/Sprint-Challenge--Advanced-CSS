@@ -1,1 +1,28 @@
 // Navigation code here
+.navigation {
+    .navStyle();
+    position: fixed;
+    top: 0;
+    margin-bottom: 200px;
+   
+    nav {
+       .aTagAndNavMargin(15px 0 0 0);
+
+       a {
+           .aTagAndNavMargin(0 20px);
+           text-decoration: none;
+           color: @nav-font;
+           font-size: 2rem;
+       }
+     }
+
+     @media @phone {
+      nav{
+        .aTagAndNavMargin(12px 0 0 0);
+        a {
+          .aTagAndNavMargin(0 5px);
+          font-size: 1.5rem;
+        }
+      }
+    }
+   }

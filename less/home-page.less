@@ -1,7 +1,12 @@
 // Home Content
 
 .home {
+  margin-top: 100px;
 
+  @media @phone {
+    margin-top: 90px;
+  }
+ 
   .intro {
 
     h2 {
@@ -11,7 +16,9 @@
     p {
       padding:0 15px;
     }
-  
+    @media @phone{
+      margin: 0 0 10px 0;
+    }
   }
 
   .space-images {
@@ -19,16 +26,39 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      display: block;
+      .launch {
+        display: none;
+      }
+      .sky {
+        display: none;
+      }
+      .blast {
+        width: 100%;
+        padding: 10px 15px 20px 15px;
+        margin: 0 auto;
+        border-radius: 30px;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        margin: 20px 3%;
+      }
     }
   }
 
   .visit-planets {
     padding: 15px;
+    @media @phone {
+      margin: 0 0 0 0;
+      padding: 15px 15px 0 15px;
+    }
 
     h3 {
       margin-top: 11px;
@@ -36,6 +66,10 @@
 
     p {
       margin-top: 13px;
+
+      @media @phone {
+        margin-bottom: 35px;
+      }
     }
   }
 
@@ -45,6 +79,15 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      margin: 0 auto;
+    }
 
     .walk-text {
       width: 50%;
@@ -58,13 +101,35 @@
       }
 
       .btn {
+        .button(30%, 2%);
+      }
+
+      @media @phone {
+        .btn {
+          .button(100%, 2%);
+          height: 7rem;
+          text-align: center;
+          padding: 26px 0 5px 0;
+        }
+      } 
+
+      @media @phone {
+        width: 100%;
+        h3 {
+          margin: 22px 0 12px 0;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 100%;
+        margin: 0 2%;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +137,14 @@
       }
     }
   }
-}// home
+}
+// home
+
+.intro div img {
+  border-radius: 7px;
+
+  @media @phone {
+      width: 100%;
+      height: 120px;
+  }
+}
